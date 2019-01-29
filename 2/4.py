@@ -1,10 +1,12 @@
 class Person:
-    name=''
+    __name=''
+    def GetName(self):
+        return self.__name
     def __init__(self,name):
-        self.name=name
+        self.__name=name
 
 x=Person("xiao.xinmiao")
-print(x.name)
+print(x.GetName())
 
 class Person2:
     name=""
